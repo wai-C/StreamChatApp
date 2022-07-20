@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">StreamChat</string>
+    <string name="api_key">-----</string>
+    <!--login-->
+    <string name="chat_app">Chat App</string>
+    <string name="reliable_and_fast">Reliable And Fast</string>
+    <string name="first_name">First Name</string>
+    <string name="username">User Name</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="error">Minimum 4 characters allowed</string>
+</resources>
