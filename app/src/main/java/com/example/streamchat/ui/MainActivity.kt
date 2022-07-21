@@ -32,4 +32,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+    fun getCurrentFragmentName():String {
+        return navController.currentDestination?.displayName ?: ""
+    }
 }

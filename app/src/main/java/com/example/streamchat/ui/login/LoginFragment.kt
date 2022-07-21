@@ -28,6 +28,7 @@ class LoginFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         loginBinding.button.setOnClickListener {
             authUser()
         }
@@ -35,7 +36,7 @@ class LoginFragment : Fragment() {
 
     private fun authUser(){
         val fName = loginBinding.editTextFirstName.text.toString()
-        val uName = loginBinding.editTextUsername.toString()
+        val uName = loginBinding.editTextUsername.text.toString()
         if(validateUserInput(fName, loginBinding.inputLayoutFirstName) &&
                 validateUserInput(uName, loginBinding.inputLayoutUsername)){
             val chatUser = ChatUser(fName, uName)
